@@ -1,0 +1,18 @@
+Suspense : Suspense is a feature in React that allows you to declaratively specify the loading
+           states for components that are waiting for asynchronous data.
+
+Profiler : The Profiler is a component in React designed to help developers measure the performance of their application. 
+           It collects timing information about each render of a React component, allowing you to identify performance 
+           bottlenecks and optimize rendering efficiency.
+
+React feautures :   - Declarative
+                    - Component-Based
+                    - Virtual DOM
+                    - Unidirectional Data Flow
+                    - JSX
+                    - SSR [Server Side Rendering] and SSG [Static Site Generation]
+                    - Simplicity
+                    - Performance
+
+
+                    

@@ -1,0 +1,66 @@
+Mongo DB
+
+ ◦ Collection
+ ◦ CRUD
+ ◦ Lookup
+ ◦ Unwind
+ ◦ In 
+
+ ◦ Capped collection : it is a special type of collections that have a fixed size and follows FIFO(fist in first out)
+                       storage mechanism.Capped collection is often used when you only need limited amount of data.Old 
+                       data is removed automatically as new data is added.
+                       eg : logging, real-time data streams, caching, message queues, and event sourcing applications.
+
+ ◦ Alias
+ ◦ Mongo Utilities
+ ◦ Indexing
+ ◦ Logical operator -              and or not nor
+ ◦ Comparison operator -           lt gt eq ne
+
+ ◦ Namespace : it refers to the combination of a database and a collections name.
+
+ ◦ addtoSet()
+ ◦ sharding
+ ◦ Insert vs save
+ ◦ BSON
+ ◦ Data type
+ ◦ Update operators - set unset inc
+ ◦ Distinct - unique
+ ◦ Accumulators - max min sum avg
+ ◦ Count
+ ◦ Out
+ ◦ Find one and upd
+ ◦ Replication
+ ◦ Aggregation
+ ◦ Normalisation and denormalisation
+ ◦ Aggregation Pipeline13
+ ◦ Replica set
+ ◦ Different types of indexing 
+ > sql vs no sql
+ > relation vs non relational 
+ > regex
+
+ > cursor : 
+
+ > upsert
+ > election
+ > CAP theorem
+ > views
+ > embedded object 
+ > allowdiskuse
+ > sharding
+ > vertical and horizontal scaling
+ > atlas
+ > trigger
+ > gridfs
+ > bitwise operator
+
+
+max document size : 16MB
+                    if the size of the document is larger than this then ,
+                    Chunking : 
+                    GridFS : 
+                    Distrubuted System : 
+                    Normalization (Referencing) : 
+                    Use of External Storage:
+                    Compression:

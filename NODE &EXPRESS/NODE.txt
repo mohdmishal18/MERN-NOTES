@@ -1,0 +1,90 @@
+NODE JS : is an open source cross platform runtime environment that allows us to execute javascirpt code on the server side.
+
+advantage of node 
+npm 
+npm init 
+timing features 
+alternatives of express
+example of all middlewares
+static files 
+CORS
+runtime environment 
+what is nodejs 
+core modules in node js 
+npm vs npx
+event-driven program 
+event-driven architecture
+event emitter 
+what is package.json ?
+
+package manager : node js comes with npm (node package manager) ecosystem which is a repository of reusable open source pakcages and modules    
+                  were developers can use them to enhance thier applications.
+
+other nodejs frameworks
+process. next tick 
+error handling middleware and it's working 
+
+buffer : is a sequence of raw binary data stored in memory. is useful for handling binary data such as files or any kind of raw / binary data.
+buffer class : it is the class used to handle binary data.It is a global object so we don't need to require/ import to use buffer class.
+
+stream 
+piping 
+error first callback 
+console. error vs console.warning 
+server communication 
+HTTP vs HTTPS 
+HTTP methods
+request and response header 
+middleware work
+
+node blocking vs asynchronous :  node js uses an event driven , non-blocking I/O model that allows multiple operations to be 
+                                 performed concurrently without waiting for each other to complete.
+
+features of node 
+event 
+transform 
+DNS module
+process.env 
+event loop
+libuv
+threadpool
+
+why single thread : node js uses a single-threaded event loop to handle asynchronous operations. 
+
+scaffolding 
+URL encoder 
+body-parser
+session and coolies 
+npm vs yarn 
+MVC 
+put and patch 
+scope chaining let vs var 
+index of findings  
+substring 
+append 
+create element 
+addevent 
+blocking code 
+JSON parse 
+JSON stringify 
+conditional operator vs optional operator 
+fork function 
+router. all
+Domain port flow
+View engine
+Http methods
+Put and post
+Application and router middleware
+Set
+Params query
+HTTP method - put vs patch
+module.exports
+BSON
+Express use
+Status code
+duplex stream 
+garbage collection
+trace
+dev dependencies
+status code 400 range
+header

@@ -1,0 +1,19 @@
+Redux Thunk : Redux Thunk is a middleware for Redux that allows you to write action creators that return a function instead of an action.
+              This is particularly useful for handling asynchronous operations in Redux, such as API calls or other side effects.
+
+              or
+
+               Redux Thunk acts as a middleware that will return you a function instead of an object while calling through the action creators.
+
+useMemo : useMemo is a React hook used for memoization, a technique to optimize performance by caching the result of a function and returning
+          the cached value when the inputs to the function remain the same. This is particularly useful for expensive computations or calculations
+          that don't need to be repeated on every render.
+
+useCallback : useCallback is a React hook used for memoizing functions. It memoizes a callback function and returns a memoized
+              version of the function that only changes if one of the dependencies has changed. This optimization is particularly
+              useful in scenarios where passing callbacks to child components can lead to unnecessary re-renders.
+
+Axios intercepters : Axios interceptors are middleware functions that Axios provides for intercepting requests or responses
+                     before they are handled by the application. They allow you to globally intercept and modify HTTP requests 
+                     or responses, add custom headers, handle errors, and perform other actions. Axios interceptors are powerful
+                     tools for managing and customizing HTTP communication in your application.

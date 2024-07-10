@@ -1,0 +1,444 @@
+ES6 difference
+Array methods
+Map filter reduce flat
+
+use strict : catch some common errors , 
+            * using undeclared variables.
+            * using some keyword such as eval etc.
+            * show errors when trying to update or delete data from a read only object. etc.
+
+spread operator : it is an operater denoted by ... dots ,it simplify the working with iterable objects
+                  operations like copying or merging with array or objects.
+                  eg : let arr1 = [1,3,5,6];
+                       let newArr = [...arr1 , 8,4,0,3,8]
+
+rest operator : the rest operator is often used the function parameters and when working with object destructuring.
+                Eg : function sum(...args) {
+                     return args.reduce((acc, val) => acc + val, 0);
+                     }
+
+                     console.log(sum(1, 2, 3));    // Output: 6
+                     console.log(sum(1, 2, 3, 4)); // Output: 10
+
+                     const [first, second, ...rest] = [1, 2, 3, 4, 5];
+
+object deep copy : we can make a deep copy of an object by using JSON.Stringify() and JSON.Parse()
+                    eg : const copy = JSON.parse(JSON.stringify(original));
+
+                    And also we can use "lodash" library to make a deep clone
+                    eg : const copy = lodash.cloneDeep(original);
+
+shallow copy :  A shallow copy of an object or array is a copy of the original object that only copies the first level of the object’s properties.
+                For nested objects or arrays, the references to the original nested objects or arrays are copied, not the actual nested objects
+                or arrays themselves. This means that if the nested objects or arrays are modified, those changes will be reflected in both the
+                original and the copied object.
+
+
+json : json is a lightweight data interchange format that is often used to transimit data between server and a web application 
+       *text based 
+       *language-independant.
+
+       # the syntax of json includes javascript object notations like {} , and [] to show arrays 
+       # data's in a json document are stored in the form of key-value pairs.
+
+json methods : JSON.Stringify() and JSON.Parse()
+               JSON.Stringify() : used to convert a javascirpt object to json string .
+               JSON.Parse() : used to covert json string in to a javascirpt object.
+
+callback : A callback is a function passed as an argument to another function, to be invoked after the first function completes.
+eg : callback hell
+getUser(userId, (user) => {
+  getPosts(user.id, (posts) => {
+    getComments(posts[0].id, (comments) => {
+      sendEmail(user.email, comments, (response) => {
+        console.log('Email sent:', response);
+      });
+    });
+  });
+});
+
+promise : A Promise in JavaScript is an object that represents the eventual completion (or failure) of an asynchronous operation
+          and its resulting value. It allows you to write asynchronous code in a more manageable and readable way compared to 
+          traditional callback-based approaches.
+
+promise methods : Promise.all => Returns a single Promise that resolves when all promises
+                                 in the iterable have resolved or rejects if any of the promises reject.
+                  Promise.race => Returns a Promise that resolves or rejects as soon as one of the
+                                  promises in the iterable resolves or rejects.
+                  Promise.allSettled => Returns a Promise that resolves after all promises in the iterable have settled (either resolved or rejected), 
+                                        with an array of objects representing the outcome of each promise.
+                  Promise.any => Returns a Promise that resolves as soon as any of the promises in the iterable fulfills,
+                                 or rejects if all of the promises reject.
+                  then()
+                  catch()
+                  finally()
+                  Promise.resolve()
+                  Promise.reject()
+
+async : async functions are functions that allow you to write asynchronous code in a synchronous-looking manner.
+
+await : await is used inside an async function to pause the execution of code until a promise is resolved.
+
+sync, async : 
+
+first class functions :functions are treated as first-class citizens. This means that functions can be assigned to variables,
+                       passed as arguments to other functions, returned from other functions, and even stored in data structures
+                       like arrays or objects.
+
+higher order function : higher-order function is a function that either takes one or more functions as arguments, 
+                        returns a function as its result, or both.
+                        eg : map , filter , reduce.
+
+hoisting :  the process whereby the interpreter appears to move the declaration of functions, variables, classes, 
+            or imports to the top of their scope, prior to execution of the code.
+
+optional chaining : Its is an object method . If there is nested object and when we try to access an attribute that doesn't exist it throws an error
+                    Instead of that we can use ?. when we accessing the attribute , when the absence of the attribute | null instead of throwing an 
+                    error it undefined.
+
+undefined :  is a primitive value that represents the absence of a value or the uninitialized state of a variable.
+
+not defined : refers to a reference error that occurs when you try to access a variable that hasn't been declared.
+
+scope chaining : it is a process in which javascirpt engine determine the value of a variable .When a variable is referenced the javascript
+                 engine looks for that variable in the current scope if there is not it goes to the parent scope and like that until it 
+                 reaches the global scope is called scope chaining.
+
+lexical envt : A lexical environment in JavaScript is a data structure that stores the variables and functions that are defined
+               in the current scope and all of the outer scopes. It is also known as the lexical scope or the lexical closure.
+
+block scope : Block scope refers to the scope created with block statements, typically using {} curly braces.
+
+closure : A closure is the combination of a function bundled together (enclosed) with references to its surrounding
+          state (the lexical environment). In other words, a closure gives you access to an outer function's scope 
+          from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
+
+set timeout set interval : 
+
+callback hell : 
+
+event loop : call stack , libuv , event queue
+
+prototypes : a prototype is a mechanism that allows objects to inherit properties and methods from other objects.
+             Every JavaScript object has a prototype, which is like a template that defines what properties and methods
+             the object should have access to
+
+prototype pollution : Prototype pollution is a vulnerability that enables threat actors to exploit JavaScript runtimes.
+                      In a prototype pollution attack, threat actors inject properties into existing JavaScript construct prototypes, attempting to
+                      compromise the application.
+
+callstack : it is a stack data structure that is used by javascript to keep the order of function execution.
+
+callback queue : which holds the result of setTimeout funtions like that.
+
+microtask queue : which holds the result of a promise 
+
+loops : Loops in programming are structures that allow you to repeat a block of code multiple
+        times based on certain conditions or for a specified number of iterations
+        for
+        while
+        do while
+        for in 
+        for of
+
+dom : 
+
+dom manipulation : 
+
+conditions : Conditions evaluate boolean expressions to determine program flow.
+             Comparison and logical operators are used to create conditions.
+             if, else, else if, switch statements are used for decision-making based on conditions.
+             Ternary operator (? :) provides a shorthand for simple conditions.
+
+object and array : 
+
+defer vs async : defer =>  the script executes as soon as it's downloaded, potentially before the HTML document is fully parsed
+                 async =>  the script executes only after the HTML document is fully parsed, but before the DOMContentLoaded event.
+
+IIFE : Immediately Invoked Function Expression .It is a normal function wrapped inside a set of braces eg :  (function(){})() 
+
+currying : Currying is a transformation of functions that translates a function from callable as f(a, b, c) into callable as f(a)(b)(c)
+           Currying simply means evaluating functions with multiple arguments and decomposing them into a sequence
+          of functions with a single argument.
+
+
+event listeners : Event listeners are functions in JavaScript that wait for specific events to occur on certain elements,
+                  and then execute a block of code in response to those events
+
+event bubbling : where an event triggered on an element propagates up through its ancestors. This behavior can be useful for event
+                 delegation and handling nested elements efficiently. You can control event propagation using methods like stopPropagation
+                 to fine-tune your application's behavior.
+
+event capturing : Event capturing, also known as "trickling", event capturing starts from the root element and propagates
+                  downwards to the target element.
+
+event propagation : Event propagation in JavaScript refers to the order in which event handlers are called when an event occurs
+                    in an element that is nested within other elements. It encompasses three phases: capturing, target, and bubbling.
+
+
+Event delegation :  is a technique in JavaScript where a single event listener is added to a parent element to manage events
+                   for multiple child elements. Instead of adding separate event listeners to each child element, event
+                   delegation leverages event bubbling to handle events at a higher level in the DOM, making it more
+                   efficient and easier to manage. 
+
+this : The this keyword refers to the object that is executing the current function or method. It allows access
+        to object properties and methods within the context of that object.
+
+window : In JavaScript, the window object is the global object in a web browser environment. 
+         It represents the window or tab in which the script is running, and it serves as the root object 
+         for the Document Object Model (DOM) and the Browser Object Model (BOM).
+
+object methods (key) :  Object.keys(): Returns an array of the object's own enumerable property names.
+
+                        Object.values(): Returns an array of the object's own enumerable property values.
+
+                        Object.entries(): Returns an array of the object's own enumerable [key, value] pairs.
+
+                        Object.assign(): Copies enumerable properties from one or more source objects to a target object.
+
+                        Object.freeze(): Freezes an object, making it immutable.
+
+                        Object.seal(): Seals an object, preventing new properties from being added and marking all existing properties as non-configurable.
+
+                        Object.create(): Creates a new object with a specified prototype object and properties.
+
+                        Object.getOwnPropertyNames(): Returns an array of all properties (including non-enumerable) found directly in a given object.
+
+styling console log : console.log('%c mishal' , 'color : blue; font-size : 30px; font-weight : bold')
+                      console.log('%c mohammed %c mishal' , 'color : blue' , 'color : black , font-weight : bold')
+
+jquery : jQuery is a fast, lightweight, and feature-rich JavaScript library designed to simplify HTML document traversal
+          and manipulation, event handling, animation, and Ajax interactions.
+
+
+
+Map and set :
+
+map vs foreach : 
+
+execution context : An execution context in JavaScript is a concept that helps manage the execution of code.
+                    It includes the environment in which the code is executed, the scope chain for variable access, and the value of this keyword.
+indexof , typeof : 
+
+instance of : The "instanceOf" operator in JavaScript is used to check whether an object belongs to a specific class or constructor function.
+
+nullish coalescing : a concise way to handle situations where you want to use a fallback value for variables that are either null or undefined. 
+                     It's represented by the ?? operator.
+                     eg : let name = null(or undefined)
+                          let newName = name ?? "mishal"
+
+object shorthand : Object shorthand in JavaScript is a convenient syntax for creating objects and assigning properties with less code,
+                   especially when the property name and variable name are the same.
+diff b/w == & === : == : checks on if the lhs and rhs are the same or checks the content is same
+                    === : check both the content and the data type of both sides (strick checking) 
+
+js engine : Parser:
+
+        The parser takes the raw JavaScript code and converts it into Abstract Syntax Trees (ASTs), 
+        which represent the structure of the code in a hierarchical form.
+
+        Interpreter:
+        The interpreter reads the ASTs generated by the parser and executes the code line by line, 
+        interpreting each statement and performing the necessary actions.
+
+        Compiler:
+        In addition to interpretation, many modern JavaScript engines use a just-in-time (JIT) compiler. 
+        The compiler translates the JavaScript code into machine code or bytecode for faster execution.
+        The compiler optimizes the code by analyzing it for performance improvements and generating optimized machine code.
+        
+        Memory Heap:
+        The memory heap is where the JavaScript engine allocates memory for variables, objects, and other data structures created during runtime.
+        
+        Call Stack:
+        The call stack keeps track of function calls and their execution context. 
+        It manages the order in which functions are called and ensures proper execution and cleanup after function execution.
+
+        Garbage Collector:
+        The garbage collector is responsible for managing memory by identifying and reclaiming unused memory (garbage). 
+        It frees up memory occupied by objects and variables that are no longer in use, preventing memory leaks. 
+
+pure functions :  they always produce the same output for the same input, and they do not have side effects.
+                  No side effects : A pure function does not modify variables outside its scope,
+                  interact with the external environment (such as reading user input or modifying the DOM),
+                  or have any observable impact other than returning a value.
+                  *predictability
+                  *immutability
+
+side effects :
+
+generators : Generators in JavaScript are a special type of function that can be paused and resumed, allowing you to manage 
+             the function execution more flexibly. They are defined using the function* syntax and use the yield keyword to pause execution.
+
+             eg : function* count() {
+                        yield 1;
+                        yield 2;
+                        yield 3;
+                 }
+
+                const counter = count();
+                console.log(counter.next().value); // 1
+                console.log(counter.next().value); // 2
+                console.log(counter.next().value); // 3
+
+
+
+class and construtor
+
+class constructor
+
+call apply bind : 
+These methods are used to control the this context in functions and allow borrowing methods from one object for use with another.
+
+call :call invokes a function with a specified this value and arguments provided one by one.
+eg : 
+const person = {
+  fullName: function(city, country) {
+    return this.firstName + " " + this.lastName + " from " + city + ", " + country;
+  }
+};
+
+const person1 = {
+  firstName: "John",
+  lastName: "Doe"
+};
+
+console.log(person.fullName.call(person1, "Oslo", "Norway"));
+// Output: "John Doe from Oslo, Norway"
+
+
+apply :apply is similar to call, but it takes an array of arguments.
+eg : 
+const person = {
+  fullName: function(city, country) {
+    return this.firstName + " " + this.lastName + " from " + city + ", " + country;
+  }
+};
+
+const person1 = {
+  firstName: "John",
+  lastName: "Doe"
+};
+
+console.log(person.fullName.apply(person1, ["Oslo", "Norway"]));
+// Output: "John Doe from Oslo, Norway"
+
+
+bind : bind returns a new function with a specified this value and optional arguments, without invoking the function immediately.
+eg : 
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+const fullName = person.fullName.bind(person);
+
+console.log(fullName());
+// Output: "John Doe"
+
+
+currying : Currying is a technique in functional programming where a function, instead of taking all arguments at once,
+           takes the first argument and returns a new function that takes the second argument, and so on, until all arguments have been provided.
+
+function add(x) {
+  return function(y) {
+    return function(z) {
+      return x + y + z;
+    };
+  };
+}
+add(1)(2)(3);
+
+arrow function vs regular function (this) : 
+
+
+prevenrdefault : it is used to prevent the default behaviour of the web browswer.
+
+weakset : 
+
+weakmap : 
+
+struturedclone
+foreach vs map
+reduce
+
+XMLhttprequest
+structuredclone
+
+stoppropagation : 
+Object prototypes
+defered script
+setinterval - understand better
+prototype chaining
+test()
+exec()
+
+staticaly typed vs dynamically typed : We don't need to specify the datatype explicitly , variables can store any type of data.
+                                       js infer the data type from on run time based on the value assinged to the variable.this datatype can better
+                                       changed throughout the runtime.
+
+constructor functions
+
+
+Polyfills : A script that updates/adds new functions is called “polyfill”. 
+            It “fills in” the gap and adds missing implementations.
+
+Interpreted language : they are executed at run time line by line . (js now uses JIT | just in time compilation) to reduces the interpretation time.
+
+
+ ✓ DOM
+ ✓ CDN vs Download
+ ✓ Event Listener
+ ✓ Closure
+ ✓ Scope and types of scope
+ ✓ Hoisting
+ ◦ Array methods
+ ◦ Array cloning
+ ◦ Spread operator
+ ◦ Map, for each and reduce()
+ ◦ Filter 
+ ◦ Callback
+ ◦ String methods
+ ◦ Callback hell
+ ◦ Currying
+ ◦ Memoization
+ ◦ Promise , promise methods
+ ◦ Arrow function
+ ◦ Types of conversion - int, parse
+ ◦ Conditional statement
+ ◦ Prototype
+ ◦ Instance()
+ ◦ Class , object, object methods
+ ◦ Object destructuring
+ ◦ Variable typing
+ ◦ Event Loop
+ ◦ Call stack
+ ◦ Global Execution context
+ ◦ Rest 
+ ◦ Spread 
+ ◦ Call 
+ ◦ Apply 
+ ◦ Bind
+ ◦ Shadowing
+ ◦ This
+ ◦ IIFE
+ > undifined vs not difined vs null
+ > fisrt class fn
+ > post and pre increment
+ > bracket notation
+ > template literals
+ > try catch
+ > pure order fn
+ > session vs local vs cookies
+ > call by value vs call by refrence
+ > recursive fn
+ > primitive and non primitive
+ > temporal dead zone
+ > higher order fn
+ > async await 
+ > this keyword
+ > concat
+ > identifier
+ > escape seaquence : \n , \t , etc.

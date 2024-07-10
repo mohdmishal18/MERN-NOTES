@@ -1,0 +1,127 @@
+[TOOLS => ⚡ ⚙️ 🔗 ⛓️ 🪝 🗡️ ⚔️ 💡 🔦 🆘 ⚛️ 💯 ☢️ 🔱 👇 👆 🫵 🫱 🫲 👉 👈 🖐️ 👍 🫶 ➡️ ⬅️ ⏭️ ⏮️ ⏩ ⏪ ]
+
+DS 1
+
+💡 application af LL ➡️ Dynamic Memory Allocation
+                         Implementing Data Structures eg : stack ,queues, trees , and hashtable
+  
+💡 LL O(n)
+💡 what is ds ➡️ A Datastructure is a storage that is used to store and organize data .It is a way of arranging data on a computer so that 
+                it can be accessed and updated efficienctly.
+💡 types of ds : 
+💡 linear vs non linear ds ➡️🪝Linear DS 👉 Datastructure in which data elements are arranged sequentially or linearly ,
+                                            where each element is is attached to its previous and next adjacent elements.
+                                            eg ➡️ array , LL , stack , queues
+
+                            🪝Non-Linear DS 👉 the element are not placed sequencially or linear.In non-linear ds we can't 
+                                                traverse all elements in a single run only
+                                                eg ➡️ tree, hashtable , heap
+
+
+💡 complexity analysis ➡️ It is the process of analysing the perfomance of algorithm & datastructures in terms of time and space 
+                         complexities.It helps us to understand how much time and memory an algorithm or datastructure require.
+
+💡 memory allocation ➡️ it is the process of allocating and deallocating memory space for storing data in a computer's memory .
+
+💡 types of memory allocation ➡️  🪝Static memory allocation 👉 The memory or for a program or a datastructure is allocated at compile-time
+                                                                and remains fixed throughout the program.
+
+                                    🪝Dynamic memory allocation 👉 In Dynamic memory allocation the memory is allocated during the runtime.
+
+💡 contiguous and non contiguous ➡️ 🪝contiguous memory allocation 👉 It refers to continous or sequential block of memory for a 
+                                                                        datastructure.In this approach the memory locations for the elements
+                                                                        of a ds is adjacent to each other in the memory.
+ 
+                                   🪝non-contiguous memory allocation 👉 It refers to the allocation of datastructure in a non-sequential manner
+                                                                      where the memory location for element are not necessarily adjacent 
+                                                                      to each other.
+
+💡 memory leaks ➡️ Is a type of software bug that occurs when a program fails to release memory that is no longer needed or used
+                  , leading to the gradual consumption of system resources and a decline in overall system performance.
+                  due to :  - Unreleased References
+                            - Event Listeners
+                            - Closures
+                            - Timers and Intervals
+
+💡 garbage collection and its working ➡️ garbage collection is an automatic memory management.The primary purpose of garbage collection 
+                                          is to identify and reclaim memory that is no longer in use, thereby preventing memory leaks and 
+                                          ensuring efficient use of memory.
+
+                                          ⚙️JavaScript uses a garbage collection mechanism called mark-and-sweep. Here’s how it works🖐️
+
+                                          1. Root Set🔱
+                                                     🔗The root set consists of global variables, variables in the call stack, 
+                                                      and variables referenced from these roots.
+
+                                                     🔗Any object that is directly or indirectly accessible from the root set is
+                                                      considered "reachable" and cannot be garbage collected.
+
+                                          2. Mark Phase🔱
+                                                         🔗The garbage collector starts from the root set and traverses all objects that
+                                                           can be reached by following references from the roots.
+                                                           
+                                                         🔗It marks these objects as "reachable."
+
+                                          3. Sweep Phase🔱
+                                                          🔗After the mark phase, any objects that were not marked as reachable
+                                                           are considered unreachable.
+
+                                                          🔗The garbage collector then reclaims the memory occupied by these unreachable objects.
+
+💡 when garbage collector fails ➡️ 🔱Memory Leaks
+                                    🔱Application Slowdown
+                                    🔱Unpredictable Behavior
+                                    🔱 Out of Memory (OOM) Errors
+                                    🔱Resource Exhaustion
+                                    🔱
+                                    🔱
+
+💡 cicular LL ➡️A circular linked list is a variation of a linked list where the last node of the list points back to the first node,
+                 creating a circular structure. In a traditional singly linked list, the last node points to null, indicating the
+                end of the list. However, in a circular linked list, the last node's next pointer points back to the first node, forming a loop.
+
+💡 doubly LL ➡️ A doubly linked list is a type of linked list in which each node contains not only a reference to the next node
+                 in the sequence (next pointer) but also a reference to the previous node (previous pointer).
+                 This bidirectional linkage allows traversal in both forward and backward directions within the list.
+
+💡 recursion ➡️ 
+
+💡 adv and disadv ➡️
+
+💡 mutable and immutable string ➡️
+
+💡 heirarchal DS ➡️A hierarchical data structure (DS) is a way of organizing data in a hierarchical or tree-like structure, 
+                    where each data element has a parent-child relationship with other elements. 
+                    This structure is commonly used to represent data in a nested manner
+
+💡 jagged array ➡️A jagged array, also known as an array of arrays, is a two-dimensional array where each element in the main array
+                   can be an array of different sizes. Unlike a regular two-dimensional array, where all rows have the same number of
+                   columns, a jagged array allows for flexibility in the number of elements in each row.
+💡 
+
+💡Algorithm ➡️ An algorithm is an well-defined instructions or steps of instructions to solve a problem.
+💡Time Complexity ➡️ Amount of time taken by the an algorithm to run as a function of input size.
+💡Space Complexity ➡️ Amount of memory take by an algorithm to run, as a function of input size.
+💡Asymptotic Notations ➡️ It is the way of describe the behaviour of an algorithms running time or space complexity as the input size 
+                           approaches infinity.It provides a formal way to analyze and compare the efficiency of an algorithm.
+
+                           Big-O Notation - Worst Case Complexity => It describes the complexity of an algorithm using algebraic terms.
+                                                                     It is expressed in terms of the input
+                                                                     Focuses on the bigger picture without getting caught up in the minute details
+                           Omega Notation - Best Case Complexity
+                           Theta Notation - Average Case Complexity 
+💡➡️
+💡➡️
+💡➡️
+💡➡️
+💡➡️
+💡➡️
+💡➡️
+💡➡️
+💡➡️
+💡➡️
+💡➡️
+💡➡️
+💡➡️
+💡➡️
+💡➡️

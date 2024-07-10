@@ -1,0 +1,44 @@
+DS 3
+ > tree,application
+ > complete,full,perfect tree
+ > bst O(log n)
+ > heap O(log n)
+ > types of graph
+ > isolated vertex
+ > weighted graph 
+ > heapsort O(n)
+ > trie vs hashtable
+ > graph indexing
+ > vertex indexing
+ > edge indexing
+ > heigth vs depth of a node
+ > degree of a node
+ > shortest path algorithm
+ > binomeal heap
+ > BFS and DFS
+ > self balancing tree
+ > topdown and bottomup heapification
+ > how to check bst is a subset of x
+ > adv of priority queue using heap
+ > adjecency list and adjecancy matrix
+ > graph , application ,types
+ > BST , application ,type
+ > trie application ,type
+ > heap , application , type
+
+ Topology : topology refers to the way in which data elements are organized and connected to each other. 
+            It describes the structure and relationships among various elements in a data structure, 
+            which can influence the efficiency and performance of data operations such as insertion, deletion, traversal, and search.
+
+splay Tree : Splay tree is a self-adjusting binary search tree data structure, which means that the tree structure is adjusted
+             dynamically based on the accessed or inserted elements. In other words, the tree automatically reorganizes itself
+             so that frequently accessed or inserted elements become closer to the root node.
+
+adjecancy : adjacency refers to the relationship between vertices (or nodes) in a graph. 
+            Two vertices are said to be adjacent if they are connected directly by an edge.
+
+dijkstra’s algorithm : Dijkstra's algorithm is a classic algorithm for finding the shortest path between nodes in a graph,
+                       which can either be directed or undirected.
+
+CRLF (\r\n) is a line ending convention used primarily by Windows and certain network protocols to denote the end of a line. 
+Proper handling of CRLF is crucial for compatibility across different systems and adherence to protocol specifications.

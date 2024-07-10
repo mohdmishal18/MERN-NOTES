@@ -1,0 +1,111 @@
+Node, Express
+
+ ◦ Patch & put :   put => update or replace the resource with new version.
+                   patch => used to apply partial modification to the resource.
+
+ ◦ Options Method : The OPTIONS method is an HTTP request method used primarily to
+                    describe the communication options for the target resource. 
+                    Clients can use the OPTIONS method to determine the supported HTTP 
+                    methods and other capabilities for a specific URL or the server as a whole.
+
+ ◦ Middlewares : Middleware is a request handler that allows you to intercept and manipulate requests and responses before they reach route 
+                 handlers.They are the functions that are invoked by the Express.js routing layer.
+                 The middleware function has access to the request object , response object and the next middleware funcitons in the req res cycle.
+
+ ◦ Callback : funciton that are passed as argument to another function.It will only run only after the current function completes. 
+
+ ◦ Set-immediate :  When you want to execute some piece of code asynchronously, but as soon as possible you can use setImmediate.
+                    setImmediate(() =>
+                    {
+                         //run something.
+                    })
+
+ ◦ types of middleware : Application-level middleware : they are bounded to the application and used across all routes.
+                                                        eg : logging middleware , error-handling middleware.
+                         Router-level middleware : These are bound to specific routes.used for route-specific functionalities.
+                         Error-handling middleware : They are used to handle error that are occuring in the req-res cycle.
+                         Third-party middleware : used to add additional functionalities to out application.
+
+ ◦ fs - modules : 
+
+ ◦ Events : 
+
+ ◦ HTTP modules - createServer() : 
+
+ ◦ package.js dependencies : the package.json file is a crucial component of any Node.js project. It serves as the project's manifest file,
+                             providing important metadata about the project and specifying the project's dependencies, scripts, and other
+                             configurations. Among these, the dependencies section is particularly important as it lists the packages
+                             that your project requires to run.
+ ◦ Routing : 
+ ◦ Query Parameters
+ ◦ Session and cookie
+ ◦ View engine
+ ◦ Hbs
+ ◦ Get post difference
+ ◦ 400 error vs 500 error
+ ◦ status code
+ ◦ Cors in detail
+ ◦ Body parser
+ ◦ Applied file , write file
+ ◦ Global execution context
+ ◦ package-lock.js file
+ ◦ Morgan
+ ◦ NPM
+ ◦ PM2
+ ◦ Postman
+ ◦ Error handling in express
+ ◦ Types of errors
+ ◦ app.use
+ ◦ MVC
+ ◦ TRACE
+ ◦ Child process
+ > fork,spawn,exec,execfile
+ > node,why
+
+ > repl : repl is an interactive command line interface provided by node js that allows us to enter , execute and see the result of 
+          javascirpt code.[Read Evaluate Print Loop].
+
+ > modules
+ > core module 
+ > local module 
+ > npm moddule
+
+ > node global object : the global object in node js serve similar purpose of the window object in browsers.But it represents the 
+                        global scope within the nodejs environment
+                        the global object provides access to various properties and functions that are available globally throughout 
+                        our node js application.
+                        eg : console.log()
+                             setTimeout()
+                             clearTimeout()
+                             setInterval()
+                             clearInterval()
+                             process
+                             require
+
+ > json
+ > express js
+ > streams
+ > types of streams
+ > techniques used for streams(piping and chaining)
+ > token
+ > libuv
+ > res.send vs res.write
+ > api
+ > logger
+ > https
+ > nodemon
+ > settimeout
+ > setinteral
+ > secret
+ > thread pool
+ > yarn
+ > debug
+ > util
+ > zlib
+ > unique identifier
+ > payload
+ > ENV
+ > TLS
+ > authentication vs authorisation
+ > app.all()
+ > structure of http request and response
