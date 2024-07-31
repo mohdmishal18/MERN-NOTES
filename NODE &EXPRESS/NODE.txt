@@ -1,3 +1,5 @@
+⚙️TOOLBOX⚙️: ⚡ 🔗 ⛓️ 🪝 🗡️ ⚔️ 💡 🔦 🆘 ⚛️ 💯 ☢️ 🔱 👇 👆 🫵 🫱 🫲 👉 👈 🖐️ 👍 🫶 ➡️ ⬅️ ⏭️ ⏮️ ⏩ ⏪
+
 NODE JS : is an open source cross platform runtime environment that allows us to execute javascirpt code on the server side.
 
 advantage of node 
@@ -88,3 +90,9 @@ trace
 dev dependencies
 status code 400 range
 header
+
+💡DeadLock : A deadlock occurs when two or more threads are blocked indefinetly , waiting for each other release 
+             resources that they need to proceed.
+
+             Eg :  Thread A holds Resource X and is waiting for Resource Y, while Thread B holds Resource Y and is waiting for Resource X. 
+             As a result, both threads are unable to proceed, leading to a deadlock.
