@@ -1,3 +1,6 @@
+[TOOLS => ⚡ ⚙️ 🔗 ⛓️ 🪝 🗡️ ⚔️ 💡 🔦 🆘 ⚛️ 💯 ☢️ 🔱 👇 👆 🫵 🫱 🫲 👉 👈 🖐️ 👍 🫶 ➡️ ⬅️ ⏭️ ⏮️ ⏩ ⏪ ]
+
+
 Mongo DB
 
  ◦ Collection
@@ -64,3 +67,10 @@ max document size : 16MB
                     Normalization (Referencing) : 
                     Use of External Storage:
                     Compression:
+
+⚙️Database Profiler : 🔗The database profiler collects detailed information about Database Commands executed against a running mongod instance. 
+                       This includes CRUD operations as well as configuration and administration commands.
+                       🔗The profiler writes all the data it collects to a system.profile collection, a capped collection in each profiled database.
+                       See Database Profiler Output for an overview of the system.profile documents created by the profiler.
+                       *the profiler is off by default.
+
